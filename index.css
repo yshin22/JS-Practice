@@ -1,0 +1,19 @@
+body {
+    background-color:#FBEC5D;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.top-navbar {
+    background-color: #63B7B7;
+    overflow: hidden;
+}
+
+.top-navbar a {
+    text-align: center;
+    float: left;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
