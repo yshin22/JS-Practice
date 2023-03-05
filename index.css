@@ -1,6 +1,7 @@
+
 body {
     background-color: rgb(255, 236, 229);
-    font-family: eb garamond;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -9,41 +10,125 @@ body {
 
 .navbar {
     top: 0px;
+    height: 100vh;
     position: sticky;
-    height: 100%;
-    padding: 40px;
+    width: 100px;
+    /*padding-left: 10px;*/
+    border-right: solid;
 }
 
 .logo {
-    width: 100px;
     font-size: 30px;
+    transform: rotate(-90deg);
+    display: flex;
+    flex-direction: row;
+    animation: out 1s;
+    margin-top: 300px;
+    border: solid;
+    background-color: transparent;
 }
 
+.logo1 {
+    padding: 100px 0px;
+}
+.logo2 {
+    padding: 100px 0px;
+
+}
+
+.logo .logo1 {
+    animation: out1 1s;
+}
+
+.logo .logo2 {
+    animation: out2 1s;
+}
+
+.logo:hover .logo1 {
+    animation: in1 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.logo:hover .logo2 {
+    animation: in2 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes out1 {
+    from {
+        transform: rotate(90deg) translate(40px, -50px);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes out2 {
+    from {
+        transform: rotate(90deg) translate(80px, 100px);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes in1 {
+    0% {
+
+    }
+
+    100% {
+        transform: rotate(90deg) translate(40px, -50px);
+
+    }
+
+}
+
+@keyframes in2 {
+    from {
+    
+    }
+
+    to {
+        transform: rotate(90deg) translate(80px, 100px);
+
+    }
+
+}
 .pages {
-    padding-top: 150px;
+    margin-top: 100px;
+    margin-left: -30px;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    /*margin: 0;
+    padding: 0;*/
     width: 180px;
 }
 
 ul a {
     display: block;
-    padding: 16px 0px;
+    padding: 18px 0px;
+    margin: 10px;
     text-decoration: none;
     color: inherit;
+    transition: transform 0.3s;
 }
 
 ul a:hover {
     color: maroon ;
+    transform: translateY(-4px);
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 /* .top-navbar {
@@ -60,11 +145,16 @@ ul a:hover {
     color: white;
     text-decoration: none;
     margin: 0px 10px;
-    display: block;
 
 }
 
 .top-navbar a:hover {
     text-decoration: underline;
+}
+
+.showcase img {
+    height: 500px;
+    width: 320px;
+    margin: 24px;
 }
 
