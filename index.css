@@ -19,89 +19,48 @@ body {
 
 .logo {
     font-size: 30px;
-    transform: rotate(-90deg);
     display: flex;
     flex-direction: row;
     animation: out 1s;
-    margin-top: 300px;
-    border: solid;
+    margin-top: 100px;
+    margin-left: -50px;
+    transform: rotate(-90deg);
+    transition: transform 1s;
     background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.logo {
+    transition: transform 1s;
 }
 
 .logo1 {
-    padding: 100px 0px;
+    transition: transform 1s;
 }
+
 .logo2 {
-    padding: 100px 0px;
-
+    transition: transform 1s;
 }
 
-.logo .logo1 {
-    animation: out1 1s;
+.logo.active {
+    transform: rotate(0deg);
+    transition: transform 1s;
 }
 
-.logo .logo2 {
-    animation: out2 1s;
+.logo1.active {
+    transition: transform 1s;
+    transform: translate(60px, 0px);
 }
 
-.logo:hover .logo1 {
-    animation: in1 1s;
-    animation-fill-mode: forwards;
-
+.logo2.active {
+    transition: transform 1s;
+    transform: translate(0px, 40px);
 }
 
-.logo:hover .logo2 {
-    animation: in2 1s;
-    animation-fill-mode: forwards;
-
-}
-
-@keyframes out1 {
-    from {
-        transform: rotate(90deg) translate(40px, -50px);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes out2 {
-    from {
-        transform: rotate(90deg) translate(80px, 100px);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes in1 {
-    0% {
-
-    }
-
-    100% {
-        transform: rotate(90deg) translate(40px, -50px);
-
-    }
-
-}
-
-@keyframes in2 {
-    from {
-    
-    }
-
-    to {
-        transform: rotate(90deg) translate(80px, 100px);
-
-    }
-
-}
 .pages {
-    margin-top: 100px;
-    margin-left: -30px;
+    margin-top: 300px;
+    margin-left: -120px;
 }
 
 ul {
