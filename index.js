@@ -4,7 +4,7 @@ function toggleAction(button) {
     document.getElementById("logo2").classList.toggle("active");
     document.getElementById("navbar").classList.toggle("active");
     document.getElementById("pages").classList.toggle("active");
-    document.getElementById("main-content").classList.toggle("active")
+   // document.getElementById("main-content").classList.toggle("active")
   }
 
 var TxtType = function(el, toRotate, period) {

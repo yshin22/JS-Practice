@@ -21,7 +21,14 @@ body {
     transition: transform 1s;
     display: flex;
     justify-content: space-between;
+    background-color: #e6e2de;
+    z-index: 2;
 
+}
+
+.navbar.active {
+    transition: transform 1s;
+    transform: translateX(100%);
 }
 
 @media screen and (max-width: 1400px) {
@@ -31,17 +38,23 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+    .navbar {
+        min-width: 70px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
     .main-content {
         padding-top: 7vh;
 
     }
-}
-
-
-.navbar.active {
-    transition: transform 1s;
-    transform: translateX(100px);
-
 }
 
 .logo {
@@ -144,19 +157,20 @@ ul a:hover {
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
-    align-items: center;    
+    align-items: center;
 }
 
 .main-content.active {
     transition: transform 1s;
-    transform: translateX(70px);
+    transform: translateX(20%);
 }
 
 /* Left off here*/
 .homepage-wrapper {
     min-height: 300px;
     min-width: 80vw;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
+    width: auto;
 }
 
 .phrase {
@@ -179,6 +193,13 @@ ul a:hover {
     padding-left: 32vw;
 }
 
+@media screen and (max-width: 991px) {
+    .phrase-wrapper-2 {
+        padding-left: 30vw;
+    }
+}
+
+
 .typewrite {
     color: #b2beb5;
     margin-top: 0px;
@@ -192,7 +213,35 @@ ul a:hover {
     }
 }
 
-* {
-    box-sizing: border-box;
+.page-wrapper {
+    min-width: 80vw;
+    padding-left: 20px;
 }
+
+.homepage-intro {
+    max-width: 32vw;
+    font-size: 16px;
+    line-height: 1.6em;
+    padding-left: 36vw;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 991px) {
+    .homepage-intro {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        max-width: 50vw;
+    }
+}
+@media screen and (max-width: 767px) {
+    .homepage-intro {
+        position: relative;
+        padding-left: 0vw;
+        max-width: 100%;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 
