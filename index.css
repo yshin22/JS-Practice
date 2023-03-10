@@ -30,6 +30,13 @@ body {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .main-content {
+        padding-top: 7vh;
+
+    }
+}
+
 
 .navbar.active {
     transition: transform 1s;
@@ -96,7 +103,7 @@ body {
 }
 
 .pages.active {
-    transform: translateX(40px);
+    transform: translateX(80px);
     transition: transform 1s, opacity 0.5s linear;
     visibility: visible;
     opacity: 1;
@@ -104,7 +111,7 @@ body {
 
 ul {
     list-style-type: none;
-
+    padding: 0;
 }
 
 ul a {
@@ -126,20 +133,30 @@ ul a:hover {
     flex-direction: column;
     transform: translateX(0px);
     transition: transform 1s;
-    padding-top: 7vh;
+    padding-top: 10vh;
+    padding-bottom: 120px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;    
 }
 
 .main-content.active {
     transition: transform 1s;
-    transform: translateX(70px)
+    transform: translateX(70px);
 }
 
+/* Left off here*/
 .homepage-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: auto;
     min-height: 300px;
-    min-width: 20vw;
+    min-width: 80vw;
+    white-space: nowrap;
 }
 
 .phrase {
@@ -148,6 +165,10 @@ ul a:hover {
     line-height: 0.9em;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.phrase-wrapper div {
+    background-color: #303030;
 }
 
 .phrase-wrapper-1 {
@@ -159,6 +180,19 @@ ul a:hover {
 }
 
 .typewrite {
-    color: #fff;
+    color: #b2beb5;
+    margin-top: 0px;
     text-decoration: none;
 }
+
+/* Here too */
+@media screen and (max-wdith: 767px) {
+    .homepage-wrapper {
+        max-width: 85vw;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+

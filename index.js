@@ -60,6 +60,6 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap {background-color: #333}";
+    css.innerHTML = ".typewrite > .wrap {}";
     document.body.appendChild(css);
 };
