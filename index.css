@@ -170,12 +170,12 @@ ul a:hover {
     min-height: 300px;
     min-width: 80vw;
     /*white-space: nowrap;*/
-    width: auto;
+    width: 100%;
 }
 
 .phrase {
-    font-size: 7.3vw;
-    font-weight: 900;
+    font-size: 6.3vw;
+    font-weight: 800;
     line-height: 0.9em;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -185,20 +185,42 @@ ul a:hover {
     background-color: #303030;
 }
 
+.phrase-wrapper {
+    padding-left: 7.1vw;
+}
+
 .phrase-wrapper-1 {
-    padding-left: 13vw;
+    padding-left: 18.3vw;
 }
 
 .phrase-wrapper-2 {
-    padding-left: 32vw;
+    padding-left: 32.6vw;
 }
 
+
 @media screen and (max-width: 991px) {
-    .phrase-wrapper-2 {
-        padding-left: 30vw;
+    .phrase-wrapper {
+        padding-left: 69.5px;
     }
 }
 
+@media screen and (max-width: 767px) {
+    .phrase-wrapper {
+        padding-left:  10.4vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .phrase-wrapper-1 {
+        padding-left: 21.5vw; 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .phrase-wrapper-2 {
+        padding-left: 36vw;
+    }
+}
 
 .typewrite {
     color: #b2beb5;
