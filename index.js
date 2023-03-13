@@ -63,3 +63,34 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap {}";
     document.body.appendChild(css);
 };
+
+
+window.onscroll = function() {
+    var phrase1 = this.document.getElementById("phrase1");
+    var phrase2 = this.document.getElementById("phrase2");
+    var phrase3 = this.document.getElementById("phrase3");
+    var phrase4 = this.document.getElementById("phrase4");
+    var phrase5 = this.document.getElementById("phrase5");
+    var phrase6 = this.document.getElementById("phrase6");
+    var phrase7 = this.document.getElementById("phrase7");
+
+    var scrollPhrase1 = document.documentElement.scrollTop * 1;
+    var scrollPhrase2 = document.documentElement.scrollTop * 1;
+    var scrollPhrase3 = document.documentElement.scrollTop * 1;
+
+    phrase1.style.transform = "translateX(" + scrollPhrase1 + "px)";
+    phrase2.style.transform = "translateX(-" + scrollPhrase2 + "px)";
+    phrase3.style.transform = "translateX(" + scrollPhrase3 + "px)";
+    phrase4.style.transform = "translateX(-" + scrollPhrase2 + "px)";
+    phrase5.style.transform = "translateX(" + scrollPhrase3 + "px)";
+    phrase6.style.transform = "translateX(-" + scrollPhrase2 + "px)";
+    phrase7.style.transform = "translateX(" + scrollPhrase2 + "px)";
+
+    // phrase1.style.transition = "transform 250ms linear";
+    // phrase2.style.transition = "transform 250ms linear";
+    // phrase3.style.transition = "transform 250ms linear";
+    // phrase4.style.transition = "transform 250ms linear";
+    // phrase5.style.transition = "transform 250ms linear";
+    // phrase6.style.transition = "transform 250ms linear";
+    // phrase7.style.transition = "transform 250ms linear";
+};
