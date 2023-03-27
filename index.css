@@ -6,11 +6,12 @@ body {
     color: #303030;
 }
 
-.main1 {
+.main-wrapper {
     display: flex;
     flex-direction: row;
 }
 
+/*Mobile heading*/ 
 .name-header {
     color: #303030;
     font-size: 24px;
@@ -23,6 +24,7 @@ body {
         display: none;
     }
 }
+/*----------------*/
 
 .navbar {
     min-height: 100vh;
@@ -32,7 +34,6 @@ body {
     border-width: 1.5px;
     border-color: #242526;
     background-color: #e6e2de;
-
 
     transform: translateX(0px);
     transition: transform 1s;
@@ -79,9 +80,8 @@ body {
     display: flex;
     flex-direction: row;
     animation: out 1s;
-    margin-top: 20vh;
-    /*padding-left: 100px;*/
-    /*margin-left: -60px;*/
+    margin-top: 10vh;
+    margin-left: -60px;
     transform: rotate(-90deg);
     transition: transform 1s;
     background-color: transparent;
@@ -89,18 +89,7 @@ body {
     cursor: pointer;
     letter-spacing: -1px;
     color: #303030;
-
-    /* top: 190px;
-    position: sticky; */
-
 }
-
-/*.logo-words {
-    top: 0;
-    position: sticky;
-}*/
-
-
 
 .logo {
     transition: transform 1s;
@@ -130,8 +119,8 @@ body {
 }
 
 .pages {
-    /*margin-top: 300px;
-    margin-left: -160px;*/
+    margin-top: 300px;
+    margin-left: -160px;
     transform: translateX(-100px);
     transition: transform 1s, visibility 0s 0.5s, opacity 1s linear;
     visibility: hidden;
