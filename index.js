@@ -94,3 +94,7 @@ window.onscroll = function() {
     // phrase6.style.transition = "transform 250ms linear";
     // phrase7.style.transition = "transform 250ms linear";
 };
+
+window.onscroll = function() {
+    
+}
