@@ -4,7 +4,6 @@ function toggleAction(button) {
     document.getElementById("logo2").classList.toggle("active");
     document.getElementById("navbar").classList.toggle("active");
     document.getElementById("pages").classList.toggle("active");
-   // document.getElementById("main-content").classList.toggle("active")
   }
 
 var TxtType = function(el, toRotate, period) {
@@ -96,5 +95,16 @@ window.onscroll = function() {
 };
 
 window.onscroll = function() {
-    
+    var nav_content = this.document.getElementById("navbar-content");
+    var limit = window.innerHeight - nav_content.offsetTop;
+
+    if (limit > 100) {
+        nav_content.style.position = 'fixed';
+        nav_content.style.backgroundColor = 'blue';
+    } 
+
+    else {
+        nav_content.style.backgroundColor = 'yellow';
+
+    }
 }
