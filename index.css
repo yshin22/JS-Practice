@@ -69,9 +69,14 @@ body {
 
 }
 
+.stop_sticky {
+    height: 70%;
+}
+
 .navbar-content {
-    top: 0;
+    top: 15vh;
     position: sticky;
+
 }
 
 .logo {
@@ -152,6 +157,15 @@ body {
     transition: transform 1s, opacity 0.5s linear;
     visibility: visible;
     opacity: 1;
+}
+
+.top {
+
+    --offset: 500px; 
+
+    position: sticky;
+    bottom: 20px;
+    margin-top: calc(100vh + var(--offset));
 }
 
 .main-content {

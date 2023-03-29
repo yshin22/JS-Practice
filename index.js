@@ -94,17 +94,15 @@ window.onscroll = function() {
     // phrase7.style.transition = "transform 250ms linear";
 };
 
-window.onscroll = function() {
-    var nav_content = this.document.getElementById("navbar-content");
-    var limit = window.innerHeight - nav_content.offsetTop;
+// window.onscroll = function() {
+//     var nav_content = this.document.getElementById("navbar-content");
+//     var limit = window.innerHeight - nav_content.offsetTop;
 
-    if (limit > 100) {
-        nav_content.style.position = 'fixed';
-        nav_content.style.backgroundColor = 'blue';
-    } 
-
-    else {
-        nav_content.style.backgroundColor = 'yellow';
-
-    }
-}
+//     if (limit < 100) {
+//         // nav_content.style.position = 'static';
+//         nav_content.style.backgroundColor = 'blue';
+//     } 
+//     else {
+//         nav_content.style.backgroundColor = 'yellow';
+//     }
+// }
