@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #e6e2de;
@@ -305,10 +308,50 @@ body {
     }
 }
 
+.scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 200px;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.aboutme-symbol {
+    transform: rotate(-90deg);
+    margin-right: 80px;
+    margin-bottom: 40px;
+}
+
+.vertical-line {
+    border-left: 2px black solid;
+    height: 150px;
+    margin-left: 40px;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 500px;
+  }
+.video-wrapper {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 
 #about {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #about img {
@@ -326,6 +369,8 @@ body {
 
 .about_intro {
     padding: 16px;
+    font-size: 16px;
+
 }
 
 .footer {
@@ -359,6 +404,15 @@ body {
 
 .contact-info div {
     padding-bottom: 6px;
+}
+
+.footer-link-wrapper a {
+    text-decoration: none;
+}
+
+.footer-link-wrapper a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media screen and (max-width: 767px) {
