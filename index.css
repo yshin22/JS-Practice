@@ -316,6 +316,7 @@ body {
     text-decoration: none;
     color: inherit;
 
+
 }
 
 .aboutme-symbol {
@@ -351,7 +352,7 @@ video {
 
 #about {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 #about img {
@@ -368,9 +369,11 @@ video {
 }
 
 .about_intro {
-    padding: 16px;
-    font-size: 16px;
-
+    padding: 36px;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    border: solid black 2px;
 }
 
 .footer {
