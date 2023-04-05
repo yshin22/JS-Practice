@@ -164,7 +164,6 @@ body {
 }
 
 .top {
-
     --offset: 500px; 
 
     position: sticky;
@@ -342,42 +341,26 @@ body {
         margin-top: 100px;
     }
 }
-/* 
-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 500px;
-  }
-
-.video-wrapper {
-    width: 300px;
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
 
 .page-wrapper {
-    min-width: 80vw;
+    /* min-width: 80vw; */
 }
 
 #about {
-    margin-top: 15vh;
-    width: 70vw;
-    position: relative;
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .picture {
     float: right;
     height: fit-content;
+    display: none;
 }
 
-#about img {
+.picture img {
     height: 700px;
     width: 475px;
 
@@ -387,26 +370,24 @@ video {
     border-radius: 10px;
 }
 
-.about_intro {
-    
-    padding-left: 5vw;
-    /* padding-right: 20vw; */
-    padding-bottom: 3vh;
-    
-    /* margin: 10px; */
-    margin-top: 60px;
+.outer-picture {
+    position: relative;
+    margin-top: 3vh;
+    margin-left: -8vw; 
+}
 
+.outer-picture img {
+    height: 700px;
+    width: 475px;
+}
+
+.about_intro {
+    width: 100%;
     font-size: 20px;
     font-weight: 600;
-    border: solid #242526 1.5px;
-    height: fit-content;
-
     line-height: 1.5;
-
+    max-width: 80rem;
     display: flex;
-    flex-direction: row;
-
-    max-width: 70%;
 
 }
 
@@ -419,7 +400,11 @@ video {
 }
 
 .about-text {
-    padding-right: 2vw;
+    border: solid #242526 1.5px;
+    padding-left: 2vw;
+    padding-right: 10vw;
+    padding-bottom: 2vw;
+    /* padding-right: 2vw; */
 }
 
 @media screen and (max-width: 767px) {
@@ -469,7 +454,20 @@ video {
     .about-title {
         font-size: 40px;
     }
+
+    .picture {
+        display: contents;
+    }
+    .outer-picture {
+        margin-top: 5vh;
+    }
 } 
+
+@media screen and (max-width: 1330px) {
+    .outer-picture {
+        margin-top: 4vh;
+    }
+}
 
 .footer {
     background-color: #fff;
