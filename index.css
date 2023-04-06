@@ -355,30 +355,38 @@ body {
 }
 
 .picture {
-    float: right;
     height: fit-content;
     display: none;
 }
 
 .picture img {
+    float: right;
     height: 700px;
     width: 475px;
 
-    margin-right: -15vw;
-    margin-left: 20px;
+    /* margin-right: -15vw;
+    margin-left: 20px; */
 
     border-radius: 10px;
 }
 
 .outer-picture {
     position: relative;
-    margin-top: 3vh;
-    margin-left: -8vw; 
+    margin-top: 3.5vh;
+    margin-left: -8vw;
+    transform: rotate(0deg) scale(1);
+    transition: transform 0.5s;
 }
+
+/* .outer-picture:hover {
+    transform: rotate(2deg) scale(1.05);
+    transition: transform 0.5s;
+} */
 
 .outer-picture img {
     height: 700px;
     width: 475px;
+    border-radius: 10px;
 }
 
 .about_intro {
@@ -389,6 +397,11 @@ body {
     max-width: 80rem;
     display: flex;
 
+}
+
+.about_intro:hover > .outer-picture{
+    transform: rotate(2deg) scale(1.05);
+    transition: transform 0.5s;
 }
 
 .about-title {
@@ -407,48 +420,29 @@ body {
     /* padding-right: 2vw; */
 }
 
-@media screen and (max-width: 767px) {
-    
-    .picture {
-        float: none;
-        display: flex;
-        justify-content: center;
-    }
-    .about_intro {
-        padding-left: 0;
-    }
-    .about-text {
-        padding-right: 20px;
-        padding-left: 20px;
-
-    }
-}
-
-@media screen and (max-width: 991px) {
-
-    .about-title {
-        width: auto;
-        display: flex;
-        justify-content: center;
+@media screen and (max-width: 1330px) {
+    .outer-picture {
+        margin-top: 4vh;
     }
 }
 
 @media screen and (max-width: 1200px) {
-
     #about {
-        /* margin-left: 5vw; */
-        display: flex;
-        justify-content: center;
+        padding-top: 10vh;
     }
-    #about img {
+
+    .picture img {
         height: 400px;
         width: 280px;
         margin: 20px;
-        margin-right: 30px;   
     }
 
     .about_intro {
         max-width: 80%;
+    }
+
+    .about-text {
+        padding-right: 2vw;
     }
 
     .about-title {
@@ -459,13 +453,42 @@ body {
         display: contents;
     }
     .outer-picture {
-        margin-top: 5vh;
+        display: none;
     }
 } 
 
-@media screen and (max-width: 1330px) {
-    .outer-picture {
-        margin-top: 4vh;
+
+@media screen and (max-width: 991px) {
+
+    .about-title {
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .picture {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .picture img {
+        float: none;
+        height: auto;
+        width: auto;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about_intro {
+        padding-left: 0;
+    }
+    .about-text {
+        padding-right: 20px;
+        padding-left: 20px;
+
     }
 }
 
