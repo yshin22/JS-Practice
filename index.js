@@ -73,25 +73,27 @@ window.onscroll = function() {
     var phrase6 = this.document.getElementById("phrase6");
     var phrase7 = this.document.getElementById("phrase7");
 
-    var scrollPhrase1 = document.documentElement.scrollTop * 1;
-    var scrollPhrase2 = document.documentElement.scrollTop * 1;
-    var scrollPhrase3 = document.documentElement.scrollTop * 1;
+    var scrollPhrase = document.documentElement.scrollTop * 1;
+    // var scrollPhrase2 = document.documentElement.scrollTop * 1;
+    // var scrollPhrase3 = document.documentElement.scrollTop * 1;
 
-    phrase1.style.transform = "translateX(" + scrollPhrase1 + "px)";
-    phrase2.style.transform = "translateX(-" + scrollPhrase2 + "px)";
-    phrase3.style.transform = "translateX(" + scrollPhrase3 + "px)";
-    phrase4.style.transform = "translateX(-" + scrollPhrase2 + "px)";
-    phrase5.style.transform = "translateX(" + scrollPhrase3 + "px)";
-    phrase6.style.transform = "translateX(-" + scrollPhrase2 + "px)";
-    phrase7.style.transform = "translateX(" + scrollPhrase2 + "px)";
+    phrase1.style.transform = "translateX(" + scrollPhrase + "px)";
+    phrase2.style.transform = "translateX(-" + scrollPhrase + "px)";
+    phrase3.style.transform = "translateX(" + scrollPhrase + "px)";
+    phrase4.style.transform = "translateX(-" + scrollPhrase + "px)";
+    phrase5.style.transform = "translateX(" + scrollPhrase + "px)";
+    phrase6.style.transform = "translateX(-" + scrollPhrase + "px)";
+    phrase7.style.transform = "translateX(" + scrollPhrase + "px)";
 
-    // phrase1.style.transition = "transform 250ms linear";
-    // phrase2.style.transition = "transform 250ms linear";
-    // phrase3.style.transition = "transform 250ms linear";
-    // phrase4.style.transition = "transform 250ms linear";
-    // phrase5.style.transition = "transform 250ms linear";
-    // phrase6.style.transition = "transform 250ms linear";
-    // phrase7.style.transition = "transform 250ms linear";
+    phrase1.style.transition = "transform cubic-bezier( 0.07, 0.19, 0.05, 0.99 ) 1s";
+    phrase2.style.transition = "transform cubic-bezier( 0.07, 0.19, 0.05, 0.99 ) 1s";
+    phrase3.style.transition = "transform cubic-bezier( 0.07, 0.19, 0.05, 0.99 ) 1s";
+    phrase4.style.transition = "transform cubic-bezier( 0.07, 0.19, 0.05, 0.99 ) 1s";
+    phrase5.style.transition = "transform cubic-bezier( 0.07, 0.19, 0.05, 0.99 ) 1s";
+    phrase6.style.transition = "transform cubic-bezier( 0.07, 0.19, 0.05, 0.99 ) 1s";
+    phrase7.style.transition = "transform cubic-bezier( 0.07, 0.19, 0.05, 0.99 ) 1s";
+
+    phrase1.style.transitionTimingFunction
 };
 
 // window.onscroll = function() {

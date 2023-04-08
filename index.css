@@ -201,11 +201,9 @@ body {
 }
 
 
-/* Left off here*/
 .homepage-wrapper {
     min-height: 300px;
     min-width: 80vw;
-    /*white-space: nowrap;*/
     width: 100%;
 }
 
@@ -492,6 +490,90 @@ body {
     }
 }
 
+
+
+#projects {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 85vw;
+}
+
+.projects-intro {
+    display: flex;
+    /* position: fixed; */
+    margin: auto;
+    /* padding-top: 1vh;
+    padding-bottom: 1vh ; */
+    z-index: 10;
+    background-color: #e6e2de;
+}
+
+.project-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-desc {
+    width: 45vw;
+    margin-right: 10vw;
+}
+
+.project-title-wrapper {
+    width: fit-content;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.project-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+}
+
+.project-name {
+    width: fit-content;
+}
+
+.ea-project {
+    display: flex;
+    flex-direction: row;
+    border-top: solid #303030 1px;
+    height: 75px;
+    margin-top: 2px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.ea-project:hover {
+    cursor: pointer;
+    height: 400px;
+}
+
+.view-button {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+
+.cta-hr {
+    border-bottom: solid #303030 1px;
+    width: 100px;
+    margin: auto;
+}
+
+.cta {
+    font-size: 12px;
+    margin: auto;
+    padding-left: 5px;
+}
+
+#project4 {
+    border-bottom: solid #303030 1px;
+}
+
 .footer {
     background-color: #fff;
     padding-top: 100px;
@@ -514,6 +596,8 @@ body {
     margin-bottom: 12vh;
 
 }
+
+
 .contact-info h6{
     font-size: 16px;
     font-weight: 700;
@@ -543,4 +627,6 @@ body {
     .contact-info {
         padding-top: 4vh;
     }
-} 
+}
+
+
