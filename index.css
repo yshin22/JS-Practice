@@ -35,7 +35,7 @@ body {
     padding-left: 10px;
     border-right: solid;
     border-width: 1.5px;
-    border-color: #242526;
+    border-color: #303030;
     background-color: #e6e2de;
 
     transform: translateX(0px);
@@ -321,7 +321,7 @@ body {
 }
 
 .vertical-line {
-    border-left: 2px #242526 solid;
+    border-left: 1px #242526 solid;
     height: 150px;
     left: 50%;
     top: 0;
