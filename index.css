@@ -560,7 +560,7 @@ body {
 
 .ea-project:hover {
     cursor: pointer;
-    height: auto;
+    height: 300px;
 }
 
 .view-button {
