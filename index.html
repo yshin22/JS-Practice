@@ -19,12 +19,15 @@
                         </button>
 
                         <div class="pages" id="pages">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#resume">Portfolio</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#about" onclick="hideNav(this)">About</a></li>
+                            <li><a href="#projects" onclick="hideNav(this)">Projects</a></li>
+                            <li><a href="#contact" onclick="hideNav(this)">Contact</a></li>
                         </div>
                     </div>
                 </div>
+                <a class="btn-up" href="#main-content">
+                    <div class="arrow"></div>
+                </a>
             </div>
 
             <div class="main-content" id="main-content">
@@ -200,7 +203,7 @@
                 </section>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer" id="contact">
             <div class="footer-info">
                 LET'S CONNECT
             </div>

@@ -27,7 +27,6 @@ body {
         display: none;
     }
 }
-/*----------------*/
 
 .navbar {
     min-height: 100vh;
@@ -81,6 +80,69 @@ body {
     position: sticky;
 
 }
+
+.btn-up {
+    bottom: 0;
+    position: sticky;
+    width: fit-content;
+    height: fit-content;
+}
+
+.arrow {
+    margin-left: 17px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+    border: solid 2px #303030;
+    border-radius: 20%;
+}
+
+/* .arrow:hover {
+    border: solid 2px #303030;
+    border-radius: 20%;
+} */
+
+.arrow:after {
+    position: absolute;
+    display: block;
+    content: "";
+    color: #303030;
+    width: 20px;
+    height: 15px;
+    top: 20px;
+    left: 40%;
+    border-left: solid 2px;
+    transform: translateX(4px);
+
+
+}
+
+.arrow:before {
+    position: absolute;
+    display: block;
+    content: "";
+    color: #303030;
+    width: 8px;
+    height: 8px;
+    border-top:solid 2px;
+    border-left:solid 2px;
+    top:15px;
+    left:50%;
+    transform-origin:0% 0%;
+    transform:rotatez(45deg);
+    }
+
+
+@media screen and (min-height: 30%) {
+    .btn-up {
+        display: none;
+    }
+}
+
 
 .logo {
     font-size: 30px;
@@ -560,7 +622,7 @@ body {
 
 .ea-project:hover {
     cursor: pointer;
-    height: 300px;
+    height: 350px;
 }
 
 .view-button {

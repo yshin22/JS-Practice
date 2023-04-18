@@ -1,11 +1,20 @@
 function toggleAction(button) {
-    button.classList.toggle("active");      
+    button.classList.toggle("active");
     document.getElementById("logo1").classList.toggle("active");
     document.getElementById("logo2").classList.toggle("active");
     document.getElementById("navbar").classList.toggle("active");
     document.getElementById("pages").classList.toggle("active");
   }
 
+  function hideNav(button) {
+    button.classList.remove("active");
+    document.getElementById("logo").classList.remove("active")
+    document.getElementById("logo1").classList.remove("active");
+    document.getElementById("logo2").classList.remove("active");
+    document.getElementById("navbar").classList.remove("active");
+    document.getElementById("pages").classList.remove("active");
+  }
+  
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
