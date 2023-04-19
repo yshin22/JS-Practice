@@ -6,14 +6,14 @@ function toggleAction(button) {
     document.getElementById("pages").classList.toggle("active");
   }
 
-  function hideNav(button) {
-    button.classList.remove("active");
-    document.getElementById("logo").classList.remove("active")
-    document.getElementById("logo1").classList.remove("active");
-    document.getElementById("logo2").classList.remove("active");
-    document.getElementById("navbar").classList.remove("active");
-    document.getElementById("pages").classList.remove("active");
-  }
+function hideNav(button) {
+  button.classList.remove("active");
+  document.getElementById("logo").classList.remove("active")
+  document.getElementById("logo1").classList.remove("active");
+  document.getElementById("logo2").classList.remove("active");
+  document.getElementById("navbar").classList.remove("active");
+  document.getElementById("pages").classList.remove("active");
+}
   
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -104,18 +104,4 @@ window.onscroll = function() {
 
     phrase1.style.transitionTimingFunction
 };
-
-// window.onscroll = function() {
-//     var nav_content = this.document.getElementById("navbar-content");
-//     var limit = window.innerHeight - nav_content.offsetTop;
-
-//     if (limit < 100) {
-//         // nav_content.style.position = 'static';
-//         nav_content.style.backgroundColor = 'blue';
-//     } 
-//     else {
-//         nav_content.style.backgroundColor = 'yellow';
-//     }
-// }
-
 
