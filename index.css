@@ -584,12 +584,49 @@ body {
 }
 
 .resume-pic {
-    margin-top: 13px;
+    margin-top: 1vh;
     width: 550px;
     height: 700px;
     transform: translateZ(20px);
     border-radius: 15px;
 
+}
+
+/* @media screen and (max-width: 1800px ) {
+    .resume-pic {
+        width: 540px;
+
+    }
+} */
+
+@media screen and (max-width: 1730px ) {
+    .resume-pic {
+        width: 520px;
+
+    }
+}
+
+@media screen and (max-width: 1650px ) {
+
+    #projects {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .resume-pic {
+        width: 550px;
+    }
+
+    .resume-pic-container {
+        margin-right: 0;
+    }
+
+    .projects-content {
+        padding-top: 10vh;
+    }
+    .ea-project {
+        width: fit-content;
+    }
 }
 
 .projects-intro {
