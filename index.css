@@ -572,9 +572,13 @@ body {
 }
 
 .resume-pic-container {
-    width: 500px;
-    height: 500px;
-    background-color: #303030;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 50px auto;
+    display: flex;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 
 }
 
