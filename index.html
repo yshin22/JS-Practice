@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn-up" href="#main-content">
+                <a class="btn-up" href="#main-content" onclick="hideNav(this)">
                     <div class="arrow"></div>
                 </a>
             </div>
@@ -62,7 +62,7 @@
                         <h1 class="phrase">HUMANS.</h1>
                     </div>
                 </div>
-                <a href="#about" class="scroll-indicator">
+                <a href="#about" class="scroll-indicator" onclick="hideNav(this)">
                     <div class="aboutme-symbol">ABOUT ME</div>
                     <div class="vertical-line"></div>
                 </a>
@@ -108,7 +108,10 @@
 
                 <section class="page-wrapper" id="projects">
                     
-                    
+
+                    <div class="resume-pic-container" data-tilt data-tilt-reverse="true">
+                        <img class="resume-pic" src="./images/resume_pic.png">
+                    </div>
 
                     <div class="projects-content">
                         <div class="project-title-wrapper">
@@ -234,10 +237,7 @@
             </div>
         </div>
 
-        <div class="resume-pic-container" data-tilt>
-            <!-- <img class="resume-pic" src="./images/resume_pic.png"> -->
-        </div>
-        <script src="./vanilla-tilt.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
     </body>
 </html>
 

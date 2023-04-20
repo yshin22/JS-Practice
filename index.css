@@ -572,22 +572,31 @@ body {
 }
 
 .resume-pic-container {
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-    margin: 50px auto;
-    display: flex;
+    width: 580px;
+    height: 730px;
     transform-style: preserve-3d;
     transform: perspective(1000px);
+    background-color: rgba(48,48,48,0.5);    
+    display: flex;
+    justify-content: center;
+    margin-right: 10vw;
+    border-radius: 15px;
+}
+
+.resume-pic {
+    margin-top: 13px;
+    width: 550px;
+    height: 700px;
+    transform: translateZ(20px);
+    border-radius: 15px;
 
 }
 
-
 .projects-intro {
-    display: flex;
     margin: auto;
     z-index: 10;
     background-color: #e6e2de;
+
 }
 
 .project-column {
@@ -623,7 +632,7 @@ body {
 .project-list-wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 45vw;
+    max-width: 50vw;
 }
 
 .project-name {
@@ -649,7 +658,7 @@ body {
 }
 
 .ea-project:hover > .view-button{
-    transform: translateX(-100px);
+    transform: translateX(-70px);
     transition: transform 1s;
 }
 

@@ -1,4 +1,4 @@
-const { default: VanillaTilt } = require("vanilla-tilt");
+
 
 function toggleAction(button) {
     button.classList.toggle("active");
@@ -110,7 +110,3 @@ window.onscroll = function() {
 // const element = document.querySelector(".resume-pic-container");
 // VanillaTilt.init(element);
 
-VanillaTilt.init(document.querySelector(".resume-pic-container"), {
-  max: 25,
-  speed: 400
-});
